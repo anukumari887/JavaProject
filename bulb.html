@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body id ="body"; style="background-color: rgb(0, 0, 0);">
+    <div id="bulb" style="margin-bottom: 3pc;
+    text-align: center;
+    box-shadow: 0 0 20px white;
+    margin-top: 80px;
+    border-width:2px;
+    border-color: #6c1616 ;
+    margin-right: 500px;
+    margin-left: 500px;
+    border-style: rounded;
+    border-radius: 50%;
+    width: 50px;
+    background-color :#000000;
+    padding :10%;" >
+    <p id="name"; style="color: white;"> No Effect</p> </div>
+    <button onclick="show()"; style="margin-left: 550px;" >Switch On</button>
+    <button onclick="show2()"; style="margin-left: 100px;">Switch Off</button>
+    <script>
+        function show(){
+            document.getElementById("name").innerHTML = "Bulb is On";
+            document.getElementById("name").style.color = "black";
+            document.getElementById("bulb").style.boxShadow = "0 0 20px yellow";
+            document.getElementById("bulb").style.transition = "0.5s";
+            document.getElementById("bulb").style.transform = "scale(1.2)";
+            document.getElementById("bulb").style.borderColor = "yellow";
+            document.getElementById("bulb").style.borderWidth = "5px";
+            document.getElementById("bulb").style.borderStyle = "solid";
+        document.getElementById("bulb").style.backgroundColor = "yellow";
+        }
+        function show2(){
+            document.getElementById("name").innerHTML = "Bulb is Off";
+            document.getElementById("name").style.color = "black";
+            document.getElementById("bulb").style.boxShadow = "0 0 20px white";
+            document.getElementById("bulb").style.transform = "scale(1)";
+            document.getElementById("bulb").style.borderColor = "white";
+            document.getElementById("bulb").style.borderWidth = "2px";
+            document.getElementById("bulb").style.borderStyle = "solid";
+        document.getElementById("bulb").style.backgroundColor = "white";
+        }
+    
+    </script>
+</body>
+</html>

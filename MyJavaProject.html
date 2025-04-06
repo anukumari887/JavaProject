@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modes of Light</title>
+</head>
+<body id ="body">
+    <h1 id="Intro">Display Mode</h1>
+    <p id="content"><b>Different Types Of Modes: Dark And Light</b></p>
+    <button onclick="show()"; style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Dark Mode</button>
+    <button onclick="show2()"; style="background-color: rgb(255, 255, 255); color: rgb(11, 192, 228);">Light Mode</button>
+    <script>
+        function show(){
+            document.getElementById("Intro").innerHTML = "Dark Mode";
+            document.getElementById("content").innerHTML = "<b>Dark mode is a display setting that inverts the typical color scheme, using a dark background with light-colored text and icons, often designed to reduce eye strain and conserve battery life, especially in low-light environments.</b>";
+            document.getElementById("content").style.color = "white";
+            document.getElementById("Intro").style.color = "white";
+        document.getElementById("body").style.backgroundColor = "black";
+        }
+        function show2(){
+            document.getElementById("Intro").innerHTML = "Light Mode";
+            document.getElementById("content").innerHTML = "<b>Light mode is a display setting that uses a light background with dark text and icons, designed for visibility in well-lit environments.</b>";
+            document.getElementById("content").style.color = "black";
+            document.getElementById("Intro").style.color = "black";
+        document.getElementById("body").style.backgroundColor = "lightblue";
+        }
+    
+    </script>
+</body>
+</html>
